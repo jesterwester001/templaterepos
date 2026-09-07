@@ -1,0 +1,552 @@
+/* jester and katie's free css template -
+made based off of katie's v2 free css template
+
+edited by jester for ease of production in free css requests
+
+template made by jester (#187561) & katie (#106445)
+
+there are a lot of other codes at use here randomly strewn throughout this and various other
+codes done by the both of us.
+below is a list of ids credited with other pieces/inspiration for various things in this template
+just because a user is credited it does not mean their code is used in one specific css made with this template,
+or even present in this template. however, these are all users who have made significant contributions to css coding
+and it's almost impossible to ignore what they've done. in some way or the other, they are present in this code
+Pandora #144118
+Kat  #94329
+tawny #251887
+Austin #43750 
+Bobcat (#79288)
+Tserin (#2230)
+Atticus (#198107)
+*/
+ 
+/* FONTS - Import from Google Fonts */
+ 
+@import url('FONT LINK');
+ 
+body {font-family: INPUT HERE;}
+ 
+.topbar {font-family: INPUT HERE;}
+ 
+.navbar {font-family: INPUT HERE;}
+
+/* BACKGROUNDS  */
+ 
+@media screen and (min-width: 601px) { 
+body {
+background: url('IMG LINK') center center fixed;
+background-size: 100%;
+color: #HEX; } }
+
+@media screen and (max-width: 600px){
+body {
+background: #HEX;
+background-size: cover;
+color: #HEX; } }
+
+/* SCROLL BOXES */
+ 
+::-webkit-scrollbar {
+width: 7px;
+height: 7px; }
+::-webkit-scrollbar-track {
+background: #HEX;}
+::-webkit-scrollbar-thumb {
+background: #HEX; } 
+ 
+/* HEADERS */
+ 
+h1 {
+color: #HEX !important;
+font-size: 64px;
+text-align: center !important;
+font-family: 'Ruslan Display', cursive;}
+
+h2 {
+color: #HEX !important;
+font-size: 24px;}
+
+h3 {
+color: #HEX !important;
+font-size: 18px;}
+ 
+/* LINKS */
+ 
+a:link,
+a:visited {
+color: #HEX !important;
+background: none !important; }
+   
+a:hover {
+color: #HEX !important; }
+ 
+/* MAIN PANEL */
+   
+.container.main {
+background: rgba(55, 58, 39, 0.0);
+border: none;
+box-shadow: none;
+border-radius: 5px; }
+.col-md-9 {
+background: none; } 
+ 
+/* TOPBAR, NAVBAR, & BREADCRUMB */
+ 
+.topbar {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;  }
+ 
+.navbar {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important; }
+
+.navbar li a:hover {
+background: #HEX !important;
+color: #e4a574 !important; }
+
+/* This is mobile collapable navbar color changes.*/
+
+.navbar-toggle {
+border: none !important;
+background: #HEX !important;
+}
+
+.navbar-collapse {
+box-shadow: none !important;
+border-top: none !important;
+}
+
+ 
+/* Bookmark Bar */
+
+.breadcrumb {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;} 
+.breadcrumb .active {
+color: #HEX; }
+ 
+/* ALERTS 
+.alert is all alerts, only set this one if you want all alerts to be the same color
+.alert-success is the green one you see for hunting, patrolling, etc.
+.alert-danger is red alerts, like inbox
+.alert-warning is also some other red alerts, but I can't remember which ones. keep this
+and danger the same color for best results
+(quick notice maybe? more research)*/
+ 
+.alert {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+text-align: center !important;  }
+.alert-warning {
+background: #HEX !important;
+color: #HEX !important;}
+.alert-danger {
+background: #HEX !important;
+color: #HEX !important;}
+.alert-success {
+background: #HEX !important;
+color: #HEX !important;}
+ 
+
+/*COMMENT BOX */
+
+div#commentBox {
+background: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+color: #HEX !important;}
+	
+.comment {     
+background: #HEX !important;
+border: none !important;
+border-bottom: none !important;
+border-radius: 0px !important;
+color: #HEX !important;
+text-align: center !important;}
+.text-muted { 
+color: #HEX !important; }
+
+input.bad {
+background: #HEX !important;
+color: #HEX !important;}
+input.bad a {
+color: #HEX !important; }
+
+table#player.table hr {
+display: none !important; }
+table#player.table div.xlarge { 
+margin-top: 10px !important; }
+
+ 
+/* SIDE PANELS 
+
+texture: 
+background-color: #1000f2;
+background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
+*/
+ 
+.panel {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+box-shadow: none !important;  }
+   
+/*IMPRESSION / ALL PROGRESS Bars */
+.progress-bar {
+background: #HEX !important; 
+border-radius: 0px !important; }
+
+/* ENERGY */ .progress-bar-warning { 
+background: #HEX !important;
+color: #HEX !important;}
+/* HUNGER */ .progress-bar-danger { 
+background: #HEX !important;
+color: #HEX !important;}
+/* EXP + ACHIEVEMENTS */ .progress-bar-success { 
+background: #HEX !important;
+color: #HEX !important;}
+
+.progress div {
+color: #HEX !important; }
+
+.progress {
+background:  #HEX;
+color: #HEX !important;
+border-radius: 0px !important;  }
+
+ 
+/* CHAT */
+
+button#label_currentChannel {
+border: none !important;
+background: #HEX !important; }
+
+div#chatMessageContainer {
+border: none !important; }
+
+/* PINNED MESSAGES - This will change the background color of where staff pin news */
+
+.s-chat-message__pinned {
+background-color: #HEX !important;
+color: #HEX !important;
+border: none !important; }
+
+.s-chat-message:nth-child(even) {
+background: #HEX !important;
+border: none !important; }
+.s-chat-message:nth-child(odd) {
+background: #HEX !important;
+border: none !important; }
+
+.s-chat-message_timestamp {
+color: #HEX !important; }
+
+/* Channel Selector */ 
+.s-chat-sidebar #fraChatChannelMenu,
+button.channelSwitcher, button.channelSwitcher.active {
+    background: #HEX !important;
+color: #HEX !important;	
+border: none !important;
+border-radius: 0px !important;
+box-shadow: none !important; }
+
+/* Emote List */
+
+div.emoteList.active {
+  background: #HEX !important;
+  border: 1px solid #HEX !important;
+  box-shadow: none !important;
+}
+div.emoteList.active::before {
+background: #HEX
+border-top: none !important;
+border: 1px solid #HEX !important; }
+
+	
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+background-color: #HEX !important;
+border-left: 6px solid #HEX !important;
+color: #HEX !important; }
+
+
+div#lblCharacterCounter {
+color: #HEX !important; }
+
+/* I can't remember what this does but I know things get weird if you touch it
+that means do NOT touch it.
+i'm being so fr stop touching this */
+html.nolayout {
+background: none !important; }
+
+/* FAPA, KING DYNASTY, ETC. */
+ 
+.feature {
+background: #HEX !important;
+color: #HEX !important;
+border: 3px double #HEX !important;
+border-radius: 0px !important;  }
+
+div.left {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important; }
+
+.xsmall {
+font-size: 14px !important; }
+ 
+/* LION INFO */
+ 
+.table {
+background: rgba(0, 0, 0, 0.0);
+border: none !important;
+border-collapse: separate;
+border-radius: 0px; }
+
+.top, .bottom, th {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important; }
+
+.bottom a:visited, .bottom a {
+text-decoration: none !important;}
+ 
+.table .left {
+background: #HEX;
+border-radius: 0px !important; }
+
+.inner-table .left {
+background: #HEX !important;
+border-radius: 0px !important;  }
+
+.inner-table .right {
+background: #HEX !important;
+border-radius: 0px !important; 
+color: #HEX !important; } 
+
+.right_odd {
+background: none !important; }
+
+
+/* DEN ICON IMAGE REPLACEMENTS - These replace the custom images shown next to message, view trades, etc.
+if you don't want these changed, just do not edit this part. 
+the names are pretty self explanatory
+you can also edit these if you want to add effects to YOUR player image and don't want it to be on these images */
+
+img[src$="icon_den_message.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="icon_den_gift.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="icon_den_trade.png"] {
+content: url('imagelink') !important; 
+width: 24px !important; }
+
+img[src$="icon_den_wishlist.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="icon_den_viewtrade.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="icon_den_gift.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="icon_den_block.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="icon_den_friend.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+img[src$="donator.png"] {
+content: url('imagelink') !important;
+width: 24px !important; }
+
+/* LION AND USER AVATAR OPACITY */
+   
+div#lion_image {
+opacity: 1.0;
+border-radius: 50%;
+overflow: hidden; }   
+table#player img {
+opacity: 1.0;
+border-radius: 50%; }
+
+/* LIODEN LOGO REPLACER
+192x120 */
+   
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
+display: none;}
+div.container.main>div:nth-child(1)>nav>div.navbar-header>a::after {
+content: url('IMG LINK'); }
+ 
+/* TEXT BOXES & BUTTONS */
+ 
+input, textarea, select, button.button,
+a.btn.btn-default.button {
+background: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+color: #HEX !important;
+text-shadow: none !important; }
+ 
+/* CAVE NAMES */
+ 
+.cave-grid,
+.mound-grid {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important; }
+
+
+/* CAVE COMPATIBILITY */
+
+.featured-lion {
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 0;
+margin: 0 auto;
+max-width: 640px;
+font-weight: bold;
+font-size: 14px; }
+
+img[src*="cave/default"] {
+content: url('IMG LINK') !important;}
+
+table#pride.table, table#pride.table a, table#pride.table a:visited {
+color: #HEX !important; }
+
+table#pride.table .xsmall
+{font-size: 12px !important;}
+
+/* This changes the color of the 'badge', aka what displays inbox notifications &
+days till heat for lionesses */
+
+.badge {
+background: #HEX !important;
+color: #HEX !important; }
+	
+/ * NO LINK UNDERLINE - This removes Link underlines at the links at the bottom of the page,
+and removes link underlines from edit your details */
+		
+.footer a:link, .footer a:visited, .footer a:active {
+border-bottom: none !important; }
+
+td.bottom a, th a {
+border-bottom: none !important; }
+
+/* BOXES */
+
+.boxcontainer {
+background: none;
+height: 75px;
+padding: 0px;
+display: block;
+justify-content: center;
+transition: 1s }
+.boxcontainer:hover {
+height: 250px; }
+   
+.Box1 {
+float: left;
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 5px;
+float: left;
+height: 75px;
+width: 100%;
+overflow: hidden;
+margin-bottom: 10px;
+transition: 1s }   
+.Box1:hover {
+overflow-y: auto;
+height: 250px; }
+   
+.Box2 {
+float: right;
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 5px;
+float: right;
+height: 75px;
+width: 30%;
+overflow: hidden;
+margin-bottom: 10px;
+transition: 1s }   
+.Box2:hover {
+overflow-y: auto;
+height: 250px; }
+	
+.Box3 {
+float: right;
+background: #HEX !important;
+color: #HEX !important;
+border: none !important;
+border-radius: 0px !important;
+padding: 5px;
+float: right;
+height: 75px;
+width: 65%;
+overflow: hidden;
+margin-bottom: 10px;
+transition: 1s }   
+.Box3:hover {
+overflow-y: auto;
+height: 250px; }
+
+
+	
+/* IF YOU WANT A CUSTOM CURSOR GO TO https://www.cursors-4u.com/
+AND COPY AND PASTE THE PROVIDED CODE ONCE YOU CLICK THE GET HTML/CSS CODE BUTTON
+DO IT BELOW THIS POINT BUT BEFORE THE CREDIT */
+	
+/* CREDIT - no touchy this part, the code will work just fine */
+ 
+.breadcrumb::after {
+content: "css by jester (#187561)";
+color: #HEX;
+position: absolute;
+right: 13%;
+z-index: 100; }
+		
+@media only screen and (max-width: 1199px) and (min-width: 992px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 991px) and (min-width: 768px)  {
+        .breadcrumb::after {
+            right: 20%;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        .breadcrumb::after {
+            right: 22%;
+        }
+    }
