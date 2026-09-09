@@ -75,8 +75,7 @@ H3 is used in the side bar (above the energy panel, achievement panel, etc. */
 h1 {
 color: #HEX !important;
 font-size: 64px;
-text-align: center !important;
-font-family: 'Ruslan Display', cursive;}
+text-align: center !important;}
 
 h2 {
 color: #HEX !important;
