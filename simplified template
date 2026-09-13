@@ -108,13 +108,22 @@ border-radius: 5px; }
 .col-md-9 {
 background: none; } 
  
-/* TOPBAR, NAVBAR, & BREADCRUMB */
+/* TOPBAR, NAVBAR, & BREADCRUMB 
+.topbar is the bar that shows your currency, your inbox, etc.
+.badge is the little icon that displays how many messages you have to read,
+and how many days a lioness has left until heat in caves
+.navbar is the bar that says "Den", "Crossroads", etc.
+.navbar li a:hover affects when you hover over a section of your navbar  */
  
 .topbar {
 background: #HEX !important;
 color: #HEX !important;
 border: none !important;
 border-radius: 0px !important;  }
+
+.badge {
+background: #HEX !important;
+color: #HEX !important; }
  
 .navbar {
 background: #HEX !important;
@@ -134,13 +143,11 @@ navbar-collapse is just there to hide the white line
 
 .navbar-toggle {
 border: none !important;
-background: #HEX !important;
-}
+background: #HEX !important; }
 
 .navbar-collapse {
 box-shadow: none !important;
-border-top: none !important;
-}
+border-top: none !important; }
 
  
 /* Bookmark Bar - aka breadcrumb, this is where your link path is shown */
@@ -219,17 +226,9 @@ margin-top: 10px !important; }
  
 /* SIDE PANELS 
 
-you can use https://www.transparenttextures.com/ to have your panel bgs, your progress bars, almost any element in your css have a texture!
-please note that the css provided by the site does NOT work on replaced images, you have to do something weird for those.
-
-if you want a texture for your panels, using the cardboard texture as an example, the code will look like this:
-.panel {
-background-color: #1000f2;
-background-image: url("https://www.transparenttextures.com/patterns/cardboard.png");
-color: #HEX !important;
-border: none !important;
-border-radius: 0px !important;
-box-shadow: none !important;  } */
+These are the panels that contain the actual information
+on the right side of your page, so where your exp, impression, etc. bars
+are contained, where your event currency is displayed, etc. */
  
 .panel {
 background: #HEX !important;
@@ -261,7 +260,7 @@ color: #HEX !important;}
 .progress div {
 color: #HEX !important; }
 
-/* This is the background of the progress bars. */
+/* This is the background of the progress bars, aka the empty part. */
 .progress {
 background:  #HEX;
 color: #HEX !important;
@@ -284,7 +283,7 @@ color: #HEX !important;
 border: none !important; }
 
 /* Odd will show at the TOP of chat, even will show every other message under it. If you want both colors the same, just copy and
-paste the code for each option*/ 
+paste the code for each option */ 
 
 .s-chat-message:nth-child(even) {
 background: #HEX !important;
@@ -527,13 +526,6 @@ color: #HEX !important; }
 
 table#pride.table .xsmall
 {font-size: 12px !important;}
-
-/* This changes the color of the 'badge', aka what displays inbox notifications &
-days till heat for lionesses */
-
-.badge {
-background: #HEX !important;
-color: #HEX !important; }
 	
 / * NO LINK UNDERLINE - This removes Link underlines at the links at the bottom of the page,
 and removes link underlines from edit your details */
