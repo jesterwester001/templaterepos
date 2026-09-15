@@ -72,6 +72,11 @@ height: 7px; }
 background: #HEX;}
 ::-webkit-scrollbar-thumb {
 background: #HEX; } 
+
+/* first number is thumb, second is track, firefox only */
+:root {
+scrollbar-color: #3E3D1E #A28E6B !important;
+scrollbar-width: auto;}
  
 /* HEADERS -
 H1 is the big header that says 'X's Den'
