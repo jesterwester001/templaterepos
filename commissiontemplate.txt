@@ -720,7 +720,7 @@ DO IT BELOW THIS POINT BUT BEFORE THE CREDIT */
 /* CREDIT - no touchy this part, the code will work just fine */
  
 .breadcrumb::after {
-content: "css template by katie (#106445) & jester (#187561)";
+content: "css by jester (#187561)";
 color: #HEX;
 position: absolute;
 right: 13%;
