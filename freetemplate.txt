@@ -224,68 +224,54 @@ color: #HEX !important;
 border-radius: 0px !important;  }
 
  
-/* CHAT */
-
-button#label_currentChannel {
-border: none !important;
-background: #HEX !important; }
-
-div#chatMessageContainer {
-border: none !important; }
-
-/* PINNED MESSAGES - This will change the background color of where staff pin news */
-
-.s-chat-message__pinned {
-background-color: #HEX !important;
-color: #HEX !important;
-border: none !important; }
-
+/* CHAT 
+i had to change this due to issues.
+.s-chat-message controls backgrounds of chat, both even and odd, odd is the first
+.s-chat-message_mention controls when you get pinged.
+.s-chat-message__pinned is the pinned message
+s-chat-message_timestamp is the text that says how recently a message was posted
+*/
+ 
 .s-chat-message:nth-child(even) {
-background: #HEX !important;
-border: none !important; }
-.s-chat-message:nth-child(odd) {
-background: #HEX !important;
-border: none !important; }
-
-.s-chat-message_timestamp {
-color: #HEX !important; }
-
-/* Channel Selector */ 
-.s-chat-sidebar #fraChatChannelMenu,
-button.channelSwitcher, button.channelSwitcher.active {
     background: #HEX !important;
-color: #HEX !important;	
-border: none !important;
-border-radius: 0px !important;
-box-shadow: none !important; }
+    border: none !important; }
+.s-chat-message:nth-child(odd) {
+background-color: #HEX !important; }
+.s-chat-message__pinned {
+    background: #HEX !important;
+    color: #HEX !important;
+    border: none !important; }
+.s-chat-message_timestamp {
+    color: #HEX !important; }
 
-/* Emote List */
-
-div.emoteList.active {
-  background: #HEX !important;
-  border: 1px solid #HEX !important;
-  box-shadow: none !important;
-}
-div.emoteList.active::before {
-background: #HEX
-border-top: none !important;
-border: 1px solid #HEX !important; }
-
-	
-#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
-background-color: #HEX !important;
-border-left: 6px solid #HEX !important;
+	#chatMessageList[data-pings="enabled"] .s-chat-message_mention {
+		background-color: #HEX !important;
+		border-left: 6px solid #HEX !important;
+		color: #HEX !important;
+		border-top-right-radius: 5px !important;
+		border-bottom-right-radius: 5px !important;
+	}
+.s-chat-message.s-chat-message_mention a, .s-chat-message.s-chat-message_mention a:visited {
 color: #HEX !important; }
-
+   
+div#chatMessageContainer {
+    border: none !important; }
+button#label_currentChannel {
+    background: #HEX !important;
+    color: #HEX !important;
+border: none !important;
+border-radius: 5px !important; }
 
 div#lblCharacterCounter {
 color: #HEX !important; }
 
-/* I can't remember what this does but I know things get weird if you touch it
-that means do NOT touch it.
-i'm being so fr stop touching this */
-html.nolayout {
-background: none !important; }
+.s-chat-sidebar #fraChatChannelMenu,
+button.channelSwitcher, button.channelSwitcher.active {
+    background: #HEX !important;
+    color: #HEX !important;
+border: none !important;
+border-radius: 5px !important;
+box-shadow: none !important; }
 
 /* FAPA, KING DYNASTY, ETC. */
  
