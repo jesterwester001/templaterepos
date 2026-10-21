@@ -1,24 +1,28 @@
-/* jester and katie's free css template -
-made based off of katie's v2 free css template
+/* jester's f2u css template
 
-edited by jester for ease of production in free css requests
+template modified from jester (#187561) & katie (#106445) f2u css template
 
-template made by jester (#187561) & katie (#106445)
-
-there are a lot of other codes at use here randomly strewn throughout this and various other
-codes done by the both of us.
-below is a list of ids credited with other pieces/inspiration for various things in this template
-just because a user is credited it does not mean their code is used in one specific css made with this template,
-or even present in this template. however, these are all users who have made significant contributions to css coding
-and it's almost impossible to ignore what they've done. in some way or the other, they are present in this code
+additional code credits, impossible to credit one by one:
 Pandora #144118
 Kat  #94329
 tawny #251887
 Austin #43750 
 Bobcat (#79288)
 Tserin (#2230)
-Atticus (#198107)
-*/
+Atticus (#198107) */
+
+/* COLORS */
+--panel: #HEX;
+--panel2: #HEX;
+--panel3: #HEX;
+--panelhover: #HEX;
+--border: #HEX;
+--text: #HEX;
+--text2: #HEX;
+--text3: #HEX;
+--hovertext: #HEX;
+--bg: #HEX;
+--mobilebg: #HEX;
  
 /* FONTS - Import from Google Fonts */
  
@@ -36,13 +40,13 @@ body {font-family: INPUT HERE;}
 body {
 background: url('IMG LINK') center center fixed;
 background-size: 100%;
-color: #HEX; } }
+color: var(--text); } }
 
 @media screen and (max-width: 600px){
 body {
-background: #HEX;
+background: var(--mobilebg);
 background-size: cover;
-color: #HEX; } }
+color: var(--text); } }
 
 /* SCROLL BOXES */
  
@@ -52,38 +56,42 @@ height: 7px; }
 ::-webkit-scrollbar-track {
 background: #HEX;}
 ::-webkit-scrollbar-thumb {
-background: #HEX; } 
+background: #HEX; }
+/* first number is thumb, second is track, firefox only */
+:root {
+scrollbar-color: #3E3D1E #A28E6B !important;
+scrollbar-width: auto;}
  
 /* HEADERS */
  
 h1 {
-color: #HEX !important;
+color: var(--text) !important;
 font-size: 64px;
 text-align: center !important;
 font-family: 'Ruslan Display', cursive;}
 
 h2 {
-color: #HEX !important;
+color: var(--text) !important;
 font-size: 24px;}
 
 h3 {
-color: #HEX !important;
+color: var(--text) !important;
 font-size: 18px;}
  
 /* LINKS */
  
 a:link,
 a:visited {
-color: #HEX !important;
+color: var(--text) !important;
 background: none !important; }
    
 a:hover {
-color: #HEX !important; }
+color: var(--text2) !important; }
  
 /* MAIN PANEL */
    
 .container.main {
-background: rgba(55, 58, 39, 0.0);
+background: var(--bg);
 border: none;
 box-shadow: none;
 border-radius: 5px; }
@@ -93,26 +101,30 @@ background: none; }
 /* TOPBAR, NAVBAR, & BREADCRUMB */
  
 .topbar {
-background: #HEX !important;
-color: #HEX !important;
+background: var(--panel2) !important;
+color: var(--text3) !important;
 border: none !important;
 border-radius: 0px !important;  }
+.topbar a, .topbar a:visited {
+color: var(--text3) !important;
+.topbar a:hover {
+color: var(--text2) !important; }
  
 .navbar {
-background: #HEX !important;
-color: #HEX !important;
+background: var(--panel) !important;
+color: var(--text) !important;
 border: none !important;
 border-radius: 0px !important; }
 
 .navbar li a:hover {
-background: #HEX !important;
-color: #e4a574 !important; }
+background: var(--panel2) !important;
+color: var(--text3) !important; }
 
 /* This is mobile collapable navbar color changes.*/
 
 .navbar-toggle {
 border: none !important;
-background: #HEX !important;
+background: var(--panel) !important;
 }
 
 .navbar-collapse {
@@ -124,12 +136,12 @@ border-top: none !important;
 /* Bookmark Bar */
 
 .breadcrumb {
-background: #HEX !important;
-color: #HEX !important;
+background: var(--panel2) !important;
+color: var(--text3) !important;
 border: none !important;
-border-radius: 0px !important;} 
+border-radius: 0px !important; } 
 .breadcrumb .active {
-color: #HEX; }
+color: var(--text3) !important; }
  
 /* ALERTS 
 .alert is all alerts, only set this one if you want all alerts to be the same color
@@ -140,20 +152,15 @@ and danger the same color for best results
 (quick notice maybe? more research)*/
  
 .alert {
-background: #HEX !important;
-color: #HEX !important;
+background: var(--panel2) !important;
+color: var(--text3) !important;
 border: none !important;
-border-radius: 0px !important;
+border-radius: 0px !important; 
 text-align: center !important;  }
-.alert-warning {
-background: #HEX !important;
-color: #HEX !important;}
-.alert-danger {
-background: #HEX !important;
-color: #HEX !important;}
-.alert-success {
-background: #HEX !important;
-color: #HEX !important;}
+.alert a, .alert a:visited {
+color: var(--text3) !important; }
+.alert a:hover {
+color: var(--text2) !important; }
  
 
 /*COMMENT BOX */
