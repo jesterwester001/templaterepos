@@ -367,6 +367,22 @@ color: #HEX !important;
 border: none !important;
 border-radius: 0px !important; }
 
+/* CAVE REPLACEMENTS 
+width: 240
+height: 120 (60 for half size - like the nesting banner)*/
+
+div.cave-grid>img[src$="cavedefault.jpg"] {
+	content: url('IMG LINK')!important; }
+div.cave-grid>img[src$="caveunused.jpg"] {
+	content: url('IMG LINK')!important; }
+
+div.cave-grid>img[src$="nestingbanner.png"] {
+	content: url('IMG LINK')!important; }
+div.cave-grid>img[src$="unsortedlionsbanner.png"] {
+	content: url('IMG LINK')!important; }
+div.cave-grid>img[src$="prideoverviewbanner.png"] {
+	content: url('IMG LINK')!important; }
+
 
 /* CAVE COMPATIBILITY */
 
@@ -471,9 +487,10 @@ height: 250px; }
 
 
 	
-/* IF YOU WANT A CUSTOM CURSOR GO TO https://www.cursors-4u.com/
-AND COPY AND PASTE THE PROVIDED CODE ONCE YOU CLICK THE GET HTML/CSS CODE BUTTON
-DO IT BELOW THIS POINT BUT BEFORE THE CREDIT */
+/* custom cursor from cursors4u or custom image code:
+custom cursor should be no more than 50x50 or 32x32
+body {
+ cursor: url('LINK'), auto;}*/
 	
 /* CREDIT - no touchy this part, the code will work just fine */
  
