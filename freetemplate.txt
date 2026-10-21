@@ -1,4 +1,4 @@
-/* jester's f2u css template
+/* jester's css template for f2u requests
 
 template modified from jester (#187561) & katie (#106445) f2u css template
 
@@ -12,6 +12,7 @@ Tserin (#2230)
 Atticus (#198107) */
 
 /* COLORS */
+:root { 
 --panel: #HEX;
 --panel2: #HEX;
 --panel3: #HEX;
@@ -23,6 +24,12 @@ Atticus (#198107) */
 --hovertext: #HEX;
 --bg: #HEX;
 --mobilebg: #HEX;
+
+--lionbg: #HEX
+--heat: indigo;
+--hungry: yellow;
+--running: red;
+--unnested: black; }
  
 /* FONTS - Import from Google Fonts */
  
@@ -383,7 +390,6 @@ div.cave-grid>img[src$="unsortedlionsbanner.png"] {
 div.cave-grid>img[src$="prideoverviewbanner.png"] {
 	content: url('IMG LINK')!important; }
 
-
 /* CAVE COMPATIBILITY */
 
 .featured-lion {
@@ -405,6 +411,36 @@ color: #HEX !important; }
 
 table#pride.table .xsmall
 {font-size: 12px !important;}
+
+/* cave qol */
+
+#pride tr:has(img[src*="hungry.png"]) td.right_odd,
+#pride tr:has(img[src*="hungry.png"]) td.right {
+    background: color-mix(var(--lionbg) 75%, var(--hungry));}
+#pride tr:has(img[src*="overcrowding.png"]) td.right_odd,
+#pride tr:has(img[src*="overcrowding.png"]) td.right{
+    background: color-mix(var(--lionbg) 75%, var(--running)) !important;}
+#pride tr:has(img[src*="inheat.png"]) td.right_odd,
+#pride tr:has(img[src*="inheat.png"]) td.right{
+    background: color-mix(var(--lionbg) 75%, var(--heat)) !important;}
+
+#pride tr:has(img[src*="nonest.png"]):has(img[src*="preg3.png"]) td.right_odd,
+#pride tr:has(img[src*="nonest.png"]):has(img[src*="preg3.png"]) td.right{
+    background: color-mix(var(--lionbg) 25%, var(--unnested));
+}
+#pride tr:has(img[src*="nonest.png"]):has(img[src*="preg2.png"]) td.right_odd,
+#pride tr:has(img[src*="nonest.png"]):has(img[src*="preg2.png"]) td.right{
+    background: color-mix(var(--lionbg) 50%, var(--unnested)) !important;
+}
+#pride tr:has(img[src*="nonest.png"]):has(img[src*="preg1.png"]) td.right_odd,
+#pride tr:has(img[src*="nonest.png"]):has(img[src*="preg1.png"]) td.right{
+    background: color-mix(var(--lionbg) 75%, var(--unnested));
+}
+#pride tr:has(+ tr .right_cub) td.right_odd {
+     background: color-mix(var(--lionbg) 70%, var(--cub));
+}
+#pride .right_cub {
+ background: color-mix(var(--lionbg) 80%, var(--cub)) !important;
 
 /* This changes the color of the 'badge', aka what displays inbox notifications &
 days till heat for lionesses */
