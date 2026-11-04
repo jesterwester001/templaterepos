@@ -1,0 +1,213 @@
+/* Jester's [#482] WD F2U Template
+You can also find me on Lioden @ #187561 
+
+This template is F2U so long as credit is retained
+
+COLORS - This is where you'll set the colors for
+your CSS. I recommend doing just a few, this template gives you
+the ability to use about 12 colors*/
+:root {
+--bg1: red;
+--bg2: blue;
+--bg3: green;
+--text1: white;
+--text2: gray;
+--text3: black;
+--accent1: pink;
+--accent2: lightblue;
+--accent3: lightgreen;
+--accent4: lightyellow;
+--accent5: lightslategray;
+--hover1: yellow;
+--hover2: orange;
+--hover3: violet; }
+
+/* This controls the background image 
+Images should be around 1920 x 1080 for best looks */
+body {
+    background-image: url('LINK') !important;
+    background-attachment: fixed;
+    background-size: cover !important; }
+
+/* Navbar
+This is the bar that says Den, Crossroads, Hoard, etc.
+.navbar-main is the general bar
+.navbar-main .nav-link .fa is the little icons like the paw
+:hover controls what happens if you hover over it. */
+
+.navbar-main {
+    background: var(--bg1) !important;
+    color: var(--text1) !important; }
+.navbar-main .nav-link .fa {
+    color: var(--text1) !important; }
+.navbar-main.nav-link:hover {
+    color: var(--hover1) !important; }
+.navbar-status, button.btn.dropdown-toggle, .dropdown-menu.show,
+.dropdown-item, .dropdown-divider {
+    background: var(--bg2) !important;
+    color: var(--text1) !important;
+    border: none !important; }
+.navbar-status a, .navbar-status a:visited {
+    color: var(--text1) !important; }
+.dropdown-item:hover, .dropdown-item:hover:visited,
+.navbar-status a:hover {
+    color: var(--hover1) !important; }
+
+/* Breadcrumb + Sidebar */
+.breadcrumb-nav, div#sidebar {
+    background: var(--bg3) !important;
+    color: var(--text1) !important;}
+.breadcrumb-item a, .breadcrumb-item a:visited,
+.breadcrumb-item.active, .breadcrumb-item.active::before,
+.breadcrumb-item::before {
+    color: var(--text1) !important; }
+.breadcrumb-item a:hover {
+    color: var(--hover1) !important;
+    text-decoration: none !important; }
+
+/* Cards 
+This controls both the Sidebar Cards AND the icons for
+Dynasty, Nesting, etc. 
+Also controls the card under your lead wolf/breeding male in
+the pack info table */
+
+.card {
+    background: var(--bg2) !important;
+    color: var(--text1) !important;
+    border-bottom: 8px solid var(--accent2) !important; }
+.card a, .card a:visited {
+    color: var(--text1) !important; }
+.card a:hover {
+    color: var(--hover2) !important;
+    text-decoration: none; }
+.card-header {
+    background: var(--bg2) !important; }
+.card-header:hover {
+    color: var(--hover1) !important; }
+
+
+.progress-bar.bg-warning {
+    background: var(--accent4) !important; }
+.progress-bar.bg-primary {
+    background: var(--accent5) !important; }
+.progress-bar.bg-danger {
+    background: var(--accent3) !important; }
+.progress-bar.bg-info {
+    background: var(--accent2) !important; }
+.progress-bar.bg-success {
+    background: var(--accent1) !important; }
+
+
+/* Main Background */
+
+#main {
+    background: var(--bg1) !important;
+    color: var(--text1) !important; }
+
+.alert {
+    background: var(--bg3);
+    color: var(--text1) !important; }
+.alert a, .alert a:visited {
+    color: var(--text1) !important; }
+.alert a:hover {
+    color: var(--hover1) !important;
+    text-decoration: none !important; }
+a:hover {
+    color: var(--hover1) !important;
+    text-decoration: none !important; }
+.alert h3:hover {
+    color: var(--hover1) !important; }
+
+.nav.nav-tabs {
+    background: var(--bg1);
+    border: none !important;
+    color: var(--text1) !important; }
+.nav.nav-tabs a, .nav.nav-tabs a:visited {
+    color: var(--text1) !important; }
+.nav-tabs .nav-link.active {
+    background: var(--bg1) !important;
+    border: none !important;
+    color: var(--text1) !important; }
+.nav-item:hover {
+    margin-bottom: 1px !important; }
+.nav-link:hover {
+    border: none !important; }
+
+/* Dynasty, Overview, Breeding, Pupsitting, Nesting,
+and Socializing Image Replacements
+If you don't want to replace these images, you can simply delete this
+section of code
+These Images are 300px x 150px
+If you are replacing with images, delete the 
+.div.col-md-4.col-6.center code
+If you want just the header, you can just leave as is. */
+
+div.col-md-4.col-6.center {
+    margin-top: 20px !important;
+    margin-bottom: 10px !important; }
+
+div.card.text-center>img[src$="packdynasty.png"] {
+    content: url('LINK') !important; }
+div.card.text-center>img[src$="packoverview.png"] {
+    content: url('LINK') !important; }
+div.card.text-center>img[src$="breeding.png"] {
+    content: url('LINK') !important; }
+div.card.text-center>img[src$="pupsitting.png"] {
+    content: url('LINK') !important; }
+div.card.text-center>img[src$="nesting.png"] {
+    content: url('LINK') !important; }
+div.card.text-center>img[src$="socializing.png"] {
+    content: url('LINK') !important; }
+
+/* TABLES */
+
+table {
+    border: none !important;
+    color: var(--text1) !important; }
+table a, table a:visited {
+    color: var(--text1) !important; }
+table a:hover {
+    color: var(--hover1) !important; 
+    text-decoration: none !important; }
+th, .bottom, .top {
+    background: var(--accent1) !important; 
+    color: var(--text1) !important; }
+th a, th a:visited, .bottom a, .bottom a:visited, .top a,
+.top a:visited {
+    color: var(--text1); }
+td.left.b {
+    background: var(--accent3) !important;
+    color: var(--text1) !important; }
+th a:hover, .bottom a:hover, .top a:hover {
+    color: var(--hover1);
+    text-decoration: none;}
+.collapseCave.btn {
+    background: var(--accent3);
+    color: var(--text1);
+    border-bottom-color: var(--bg3) !important;}
+tr {
+    background: var(--bg3) !important; }
+td.p-0 img {
+    border: none !important; }
+td.subheader {
+    background: var(--bg2) !important; }
+.text-success {
+    color: var(--accent2) !important; }
+
+select, textarea, input,
+.custom-control-label::before, button {
+    background: var(--accent5) !important;
+    color: var(--text1) !important;
+    border: none !important; }
+.bg-bar-input {
+    background: var(--text3) !important; }
+.btn.btn-htmlinput, .btn.btn-htmlinput .fa, #btn-headings,
+#btn-paragraph, #btnCleanup, #btn-headings.dropdown-menu,
+div.show:nth-child(2) {
+    background: var(--text2) !important;
+    color: var(--text1) !important; }
+#footer.container {
+    background: var(--bg3) !important;
+    color: var(--text1) !important; }
+#footer.container a:hover {
+    color: var(--hover1) !important; }
